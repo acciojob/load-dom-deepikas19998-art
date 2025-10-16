@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Load Success</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const script = document.createElement("script");
+      script.src = "script.js";
+      document.body.appendChild(script);
+    });
+  </script>
 </head>
 <body>
   <!-- Initially, the body is empty -->
-  <script src="script.js"></script>
 </body>
 </html>
